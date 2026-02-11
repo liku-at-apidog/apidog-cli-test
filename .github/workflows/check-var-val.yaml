@@ -11,4 +11,6 @@ jobs:
 
       - name: Use repository variable
         run: echo "The value of The Token is $APIDOG_ACCESS_TOKEN"
+        
+      - name: Use repository variable with vars
         run: echo "The value of The Token is ${{ vars.APIDOG_ACCESS_TOKEN }}"
