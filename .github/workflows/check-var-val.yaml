@@ -1,0 +1,9 @@
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Use repository variable
+        run: echo "The value of MY_VAR is ${{ vars.APIDOG_ACCESS_TOKEN }}"
